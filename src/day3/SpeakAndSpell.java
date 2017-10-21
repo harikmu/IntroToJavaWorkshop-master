@@ -18,12 +18,18 @@ public class SpeakAndSpell {
 
 	public static void main(String[] args) {
 		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
+			speak("spell horrifying fungus");
 		// 2. Catch the user's answer in a String
-
+			String answer;
+			answer = JOptionPane.showInputDialog("your answer");
 		// 3. If the user spelled the word correctly, speak "correct"
-
+			if(answer.equals("horrifying fungus")) {
+				speak("correct, you still need help");
+			}
 		// 4. Otherwise say "wrong"
+			else {
+				speak("wrong, you need help");
+			}
 
 		// 5. repeat the process for other words
 		
